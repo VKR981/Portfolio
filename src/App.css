@@ -1,38 +1,186 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap" rel="stylesheet">');
+
+body {
+  background-color: black;
+  color: aqua;
+
+  /* background: linear-gradient(90deg, #eee 1%, transparent 1%) 1px 0, rgb(0, 0, 0);
+  background-size: 60px 1px;
+  background: linear-gradient(180deg, aqua 1%, transparent 1%) 1px 0, rgb(0, 0, 0);
+  background-size: 60px 60px; */
+
+}
+
+var {
+  square-size: 50px
+}
+
+.background1 {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-size: 50px 100%;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to right, aqua 1px, transparent 1px);
+  z-index: -1;
+  opacity: .2;
+}
+
+.background2 {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-size: 100% 50px;
+  background-repeat: repeat-y;
+  background-image: linear-gradient(aqua 1px, transparent 1px);
+  z-index: -1;
+  opacity: .2;
+}
+
+
+.maincontainer {
+  margin: 30px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+h1 {
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.candidate-container {
+  /* display: inline-block; */
+  border-width: 0px;
+  border-style: solid;
+  border-color: aqua;
+  border-radius: 5px;
+
+  height: max-content;
+  width: max-content;
+
+  /* filter: drop-shadow(0px 0px 3px aqua); */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.candidate {
+  color: aqua;
+
+
+
+  padding: 5px 20px;
+}
+
+
+
+.skills-container {
+  border-width: 0px;
+  border-style: solid;
+  border-color: aqua;
+  border-radius: 5px;
+
+  /* height: min-content; */
+
+  /* filter: drop-shadow(0px 0px 3px aqua); */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  width: max-content;
+  padding: 5px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.skill-subsection {
+  padding: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  text-align: center;
+  /* display: inline; */
+  margin: 3px;
+
+}
+
+h4 {
+  text-align: center;
+  /* display: inline; */
+  margin: 5px;
+}
+
+.seperater {
+  margin-top: 0;
+  border-bottom: 1px solid aqua;
+
+}
+
+.skill-bar {
+  color: antiquewhite;
+  display: inline;
+  background-color: aqua;
+  height: 10px;
+  margin: auto 0;
+}
+
+.skill {
+  /* width: min-content; */
+  margin: 5px 5px 5px 5px;
+}
+
+.skillbar-pair {
+  display: flex;
+}
+
+
+
+.skill-empty-bar {
+
+  display: inline;
+  background-color: transparent;
+  height: 8px;
+  margin: auto 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: aqua;
+}
+
+.nav-bar {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto 16px 160px 16px auto;
+}
+
+.white {
+  color: aliceblue;
+  filter: drop-shadow(0px 0px 0px transperant);
+}
+
+.section-title {
+  font-family: 'Athiti', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.candidate-li {
+  margin-bottom: 3px;
 }
